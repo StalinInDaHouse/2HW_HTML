@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Элементы форм</title>
@@ -14,37 +14,26 @@
 <form action="/handler.php" method="post">
     <label for="clientName">Ваше имя</label>
     <input type="text" id="clientName" name="clientName"/>
-    <button type="submit">Отправить заявку</button>
-</form>
 
-<h2> Чекбоксы и радио-баттоны: </h2>
-<form action="/handler.php" method="post" >
+
+    <h2> Чекбоксы и радио-баттоны: </h2>
     <p class="header">На каких языках Вы разговариваете?</p>
-    <p><input type="checkbox" name="lang1" value="RU" checked>Русский<Br>
-        <input type="checkbox" name="lang2" value="EN">Английский<Br>
-        <input type="checkbox" name="lang3" value="DE">Немецкий<Br>
-        <input type="checkbox" name="lang4" value="JA">Японский<Br>
-        <input type="checkbox" name="lang5" value="ZH">Китайский<Br>
-        <input type="checkbox" name="lang6" value="ES">Испанский</p>
-    <p><input type="submit" value="Отправить"></p>
-</form>
-<form action="/handler.php" method="post" >
+    <p><input type="checkbox" id="RU" name="checkBox"><label for="RU">Русский</label><Br>
+        <input type="checkbox" id="EN" name="checkBox"><label for="EN">Английский</label><Br>
+        <input type="checkbox" id="DE" name="checkBox"><label for="DE">Немецкий</label><Br>
+        <input type="checkbox" id="JA" name="checkBox"><label for="JA">Японский</label><Br>
+        <input type="checkbox" id="ZH" name="checkBox"><label for="ZH">Китайский</label><Br>
+        <input type="checkbox" id="ES" name="checkBox"><label for="ZH">Испанский</label><Br>
     <p class="header">На каком уровне?</p>
-    <p><input type="radio" name="lvl" value="LOW">Ниже среднего<Br>
-        <input type="radio" name="lvl" value="MEDIUM" checked>Средний<Br>
-        <input type="radio" name="lvl" value="HIGH">Выше среднего<Br>
-    <p><input type="submit" value="Отправить"></p>
-</form>
+    <p><input type="radio" id="LOW" name="myRadio"><label for="LOW">Ниже среднего</label><Br>
+        <input type="radio" id="MED" name="myRadio"><label for="MED">Ниже среднего</label><Br>
+        <input type="radio" id="HIGH" name="myRadio"><label for="HIGH">Выше среднего</label><Br>
 
-<h2> Многострочные поля ввода: </h2>
-<form action="/handler.php" method="post">
-        <p class="header"><b>Введите ваш отзыв:</b></p>
-        <p><textarea name="comment"></textarea></p>
-        <p><input type="submit"></p>
-</form>
+    <h2> Многострочные поля ввода: </h2>
+    <p class="header"><b>Введите ваш отзыв:</b></p>
+    <p><textarea name="comment"></textarea></p>
 
-<h2> Списки: </h2>
-<form action="/handler.php" method="post">
+    <h2> Списки: </h2>
     <p><select size="10" multiple name="пункт[]">
         <option disabled>Выберите несколько пунктов, зажав клавишу Ctrl</option>
         <option value="1">1</option>
@@ -58,10 +47,7 @@
         <option value="9">9</option>
         <option value="10">10</option>
     </select></p>
-    <p><input type="submit" value="Отправить"></p>
-</form>
 
-<form action="/handler.php" method="post">
     <p><select>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -74,16 +60,17 @@
         <option value="9">9</option>
         <option value="10">10</option>
     </select></p>
-    <p><input type="submit" value="Отправить"></p>
 
     <h2> Кнопки: </h2>
-    <form>
-        <button> <img src="https://www.meme-arsenal.com/memes/c79d46e696c06b0bc0cf81ff08d1f44f.jpg" /> </button>
-    </form>
-    <br>
-    <br>
-    <hr/>
-    <a target="_blank" href="http://localhost:63342/2HW_HTML/engineTable.html?_ijt=8hfgh7ok552ql458dnt1m6kcu3&_ij_reload=RELOAD_ON_SAVE"> В другой нашей статье Вы можете ознакомиться с браузерами и их движками </a>
-    <hr/>
+    <button><img src="https://www.meme-arsenal.com/memes/c79d46e696c06b0bc0cf81ff08d1f44f.jpg"/></button>
+    <p><button type="submit">Кнопка сабмита формы</button></p>
+</form>
+<br>
+<br>
+<hr/>
+<a target="_blank"
+   href="http://localhost:63342/2HW_HTML/engineTable.html?_ijt=8hfgh7ok552ql458dnt1m6kcu3&_ij_reload=RELOAD_ON_SAVE">
+    В другой нашей статье Вы можете ознакомиться с браузерами и их движками </a>
+<hr/>
 </body>
 </html>
